@@ -18,6 +18,7 @@ function BottomSheetHandleContainerComponent({
   simultaneousHandlers: _internalSimultaneousHandlers,
   enableHandlePanningGesture = DEFAULT_ENABLE_HANDLE_PANNING_GESTURE,
   handleComponent: HandleComponent,
+  handleContainerStyle: _providedHandleContainerStyle,
   handleStyle: _providedHandleStyle,
   handleIndicatorStyle: _providedIndicatorStyle,
 }: BottomSheetHandleContainerProps) {
@@ -166,6 +167,7 @@ function BottomSheetHandleContainerComponent({
     <GestureDetector gesture={panGesture}>
       <Animated.View
         ref={ref}
+        style={_providedHandleContainerStyle}
         onLayout={handleContainerLayout}
         key="BottomSheetHandleContainer"
       >

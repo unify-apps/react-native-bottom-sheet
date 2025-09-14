@@ -114,6 +114,7 @@ const BottomSheetComponent = forwardRef<BottomSheet, BottomSheetProps>(
       style,
       containerStyle: _providedContainerStyle,
       backgroundStyle: _providedBackgroundStyle,
+      handleContainerStyle: _providedHandleContainerStyle,
       handleStyle: _providedHandleStyle,
       handleIndicatorStyle: _providedHandleIndicatorStyle,
 
@@ -1834,6 +1835,7 @@ const BottomSheetComponent = forwardRef<BottomSheet, BottomSheetProps>(
                     overDragResistanceFactor={overDragResistanceFactor}
                     keyboardBehavior={keyboardBehavior}
                     handleComponent={handleComponent}
+                    handleContainerStyle={_providedHandleContainerStyle}
                     handleStyle={_providedHandleStyle}
                     handleIndicatorStyle={_providedHandleIndicatorStyle}
                   />
