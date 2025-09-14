@@ -1,7 +1,6 @@
 import type React from 'react';
-import type { View, ViewProps } from 'react-native';
+import type { ViewProps } from 'react-native';
 import type { PanGestureHandlerProperties } from 'react-native-gesture-handler';
-import type { AnimateProps, SharedValue } from 'react-native-reanimated';
 import type { useInteractivePanGestureHandlerConfigs } from '../../hooks/useGestureHandler';
 import type {
   BottomSheetVariables,
@@ -43,6 +42,7 @@ export type BottomSheetHandleContainerProps = Pick<
     | 'handleIndicatorStyle'
     | 'handleStyle'
     | 'handleComponent'
+    | 'handleContainerStyle'
   > &
   Pick<
     useInteractivePanGestureHandlerConfigs,

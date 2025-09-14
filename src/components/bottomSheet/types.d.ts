@@ -1,5 +1,5 @@
 import type React from 'react';
-import type { Insets, StyleProp, View, ViewStyle } from 'react-native';
+import type { Insets, StyleProp, ViewStyle } from 'react-native';
 import type { PanGesture } from 'react-native-gesture-handler';
 import type {
   AnimateStyle,
@@ -212,6 +212,12 @@ export interface BottomSheetProps
   backgroundStyle?: StyleProp<
     Omit<ViewStyle, 'position' | 'top' | 'left' | 'bottom' | 'right'>
   >;
+  /**
+   * View style to be applied to the handle component.
+   * @type ViewStyle
+   * @default undefined
+   */
+  handleContainerStyle?: StyleProp<ViewStyle>;
   /**
    * View style to be applied to the handle component.
    * @type ViewStyle
